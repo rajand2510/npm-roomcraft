@@ -29,7 +29,7 @@ export default function HomePage() {
 
 
           ].map(([Icon, title, desc], idx) => (
-            <div key={idx} className="bg-white p-6 shadow-md rounded-xl flex items-start space-x-4">
+            <div key={idx} className="bg-white p-6 shadow-sm rounded-xl flex items-start space-x-4">
               <Icon className="w-10 h-10 text-blue-500" />
               <div>
                 <h3 className="font-semibold text-lg">{title}</h3>

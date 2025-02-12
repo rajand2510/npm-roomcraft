@@ -3,7 +3,11 @@ import Sidebar from "../components/Sidebar";
 import NavbarLight from "../components/NavbarWhite";
 import HomePage from "../components/HomePage";
 import InstallationPage from "../components/InstallationPage";
-import ExamplePage from "../components/ExamplePage";
+import DemoPage from "../components/DemoPage ";
+import CustomizablePage from "../components/CustomizablePage";
+
+
+// import DetailedPage from "../components/DetailedPage ";
  // Import additional pages as needed
 //import HelpCenterPage from "../components/HelpCenterPage"; // Import Help Center page
 //import ContactSupportPage from "../components/ContactSupportPage"; // Import Contact Support page
@@ -17,12 +21,12 @@ const Dashboard = () => {
         return <HomePage />;
       case "InstallationPage":
         return <InstallationPage />;
-      case "ExamplePage":
-        return <ExamplePage />;
-      case "HelpCenterPage":
-        return <HelpCenterPage />;
-      case "ContactSupportPage":
-        return <ContactSupportPage />;
+      case "DemoPage":
+        return <DemoPage />;
+      case "CustomizablePage":
+        return <CustomizablePage />;
+      case "DetailedPage":
+        return <DemoPage />;
       // Add more cases for additional pages
       default:
         return <HomePage />;
@@ -30,6 +34,7 @@ const Dashboard = () => {
   };
 
   return (
+    <div className=" bg-white"><div className="absolute bottom-auto left-auto right-0 top-0 h-[500px] w-[500px] -translate-x-[30%] translate-y-[20%] rounded-full bg-[rgba(173,109,244,0.5)] opacity-50 blur-[80px]"></div>
     <div className="bg-white flex flex-col  overflow-hidden">
       <div className=""><NavbarLight /></div>
       <div className="flex flex-row relative h-screen">
@@ -40,6 +45,7 @@ const Dashboard = () => {
           {renderPage()}
         </div>
       </div>
+    </div>
     </div>
   );
 };

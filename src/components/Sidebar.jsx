@@ -53,7 +53,7 @@ const Sidebar = ({ onSelect, activePage }) => {
       ],
     },
     {
-      name: "Integration",
+      name: "Documentation",
       icon: <ArrowRightCircle className="w-5 h-5" />,
       submenu: [
         {
@@ -62,21 +62,21 @@ const Sidebar = ({ onSelect, activePage }) => {
         },
         {
           name: "Demo",
-          onClick: () => onSelect("ExamplePage"),
+          onClick: () => onSelect("DemoPage"),
         },
       ],
     },
     {
-      name: "Transactions",
+      name: "Product Cards",
       icon: <Settings className="w-5 h-5" />,
       submenu: [
         {
-          name: "View Transactions",
-          onClick: () => onSelect("ViewTransactionsPage"),
+          name: "Customizable Card",
+          onClick: () => onSelect("CustomizablePage"),
         },
         {
-          name: "Create Transaction",
-          onClick: () => onSelect("CreateTransactionPage"),
+          name: "Detailed Product Card",
+          onClick: () => onSelect("DetailedPage"),
         },
       ],
     },
@@ -90,7 +90,7 @@ const Sidebar = ({ onSelect, activePage }) => {
   ];
 
   return (
-    <nav className="mt-[62px] border-1 overscroll-none border-gray-600/10 w-80 min-h-screen border-r bg-white space-y-8">
+    <nav className="mt-[62px]  overscroll-none shadow-sm  w-80 min-h-screen  bg-white space-y-8">
       <div className="flex mt-5 flex-col h-full px-4 overflow-auto">
         <ul className="text-sm font-medium flex-1">
           {navigation.map((item, idx) => (
