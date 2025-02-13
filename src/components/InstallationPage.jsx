@@ -171,7 +171,7 @@ export default App;`}
                         </p>
                         <div className="mt-4">
                             <SyntaxHighlighter language="jsx" style={solarizedlight}>
-                                {`import { Arcard } from "3d-ar-product-card";
+                                {`import { Arcard } from "room-craft";
 
 <Arcard
   gltfPath="/models/tree_lamp.glb"

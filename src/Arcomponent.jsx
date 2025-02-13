@@ -1,5 +1,5 @@
 import { useLocation } from 'react-router-dom';
-import { XrHitModelContainer } from '3d-ar-product-card';
+import { XrHitModelContainer } from 'room-craft';
 
 const Arcomponent = () => {
   const location = useLocation();

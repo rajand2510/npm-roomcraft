@@ -71,7 +71,7 @@ const Sidebar = ({ onSelect, activePage }) => {
       icon: <Settings className="w-5 h-5" />,
       submenu: [
         {
-          name: "Customizable Card",
+          name: "3D-AR sm",
           onClick: () => onSelect("CustomizablePage"),
         },
         {

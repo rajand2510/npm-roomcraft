@@ -1,9 +1,18 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useState } from "react";
 import {  faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faBolt, faArrowRight as faArrowRightSolid } from '@fortawesome/free-solid-svg-icons';
-import { Arcard } from "3d-ar-product-card"; // Assuming this is the AR product card package
-
+import { Arcard } from "room-craft"; // Assuming this is the AR product card package
+import { Clipboard, ClipboardCheck } from "lucide-react";
 const Home = () => {
+    const [copied, setCopied] = useState(false);
+    const command = "npm i room-craft --force";
+  
+    const copyToClipboard = () => {
+      navigator.clipboard.writeText(command);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    };
     return (
         <div className="bg-gradient-to-r from-black via-gray-900 to-black text-white min-h-screen flex  items-start justify-center"> {/* Change items-center to items-start */}
             {/* <Navbar  /> */}
@@ -36,7 +45,12 @@ const Home = () => {
                     <a href="/dashboard" className="bg-white text-black px-6 py-3 rounded-full shadow-md hover:bg-gray-200 transition">
                         Get Started  <FontAwesomeIcon icon={faArrowRightSolid} />
                     </a>
-                  
+                    <div className="flex items-center bg-white/10 backdrop-blur-lg p-3 px-4 rounded-4xl border border-white/20 shadow-lg">
+      <span className="text-white font-mono mr-2">{command}</span>
+      <button onClick={copyToClipboard} className="text-white hover:text-gray-300">
+        {copied ? <ClipboardCheck size={20} /> : <Clipboard size={20} />}
+      </button>
+    </div>
                 </div>
             </div>
             <div className="flex mt-8 flex-row space-x-8">
