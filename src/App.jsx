@@ -3,7 +3,7 @@ import './App.css'
 import { Routes, Route } from "react-router-dom";
 import Home from './pages/Home';
 
-import Dashboard from './pages/dashboard';
+import Dashboard from './pages/Dashboardashboard';
 import Arcomponent from './components/Arcomponent';
 
 function App() {
