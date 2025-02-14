@@ -1,11 +1,11 @@
 import { useState } from "react";
-import Sidebar from "../components/Sidebar";
-import NavbarLight from "../components/NavbarWhite";
-import HomePage from "../components/HomePage";
-import InstallationPage from "../components/InstallationPage";
-import DemoPage from "../components/DemoPage ";
-import CustomizablePage from "../components/CustomizablePage";
-import DetailedPage from "../components/DetailedPage";
+import Sidebar from "./Sidebar";
+import NavbarLight from "./NavbarWhite";
+import HomePage from "./HomePage";
+import InstallationPage from "./InstallationPage";
+import DemoPage from "./DemoPage ";
+import CustomizablePage from "./CustomizablePage";
+import DetailedPage from "./DetailedPage";
 
 
 // import DetailedPage from "../components/DetailedPage ";

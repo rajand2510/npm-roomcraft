@@ -5,7 +5,8 @@ import Home from './pages/Home';
 
 
 import Arcomponent from './components/Arcomponent';
-import Dashboard from './pages/Dashboar';
+import Dashboard from './components/Dashboard';
+
 
 function App() {
  
