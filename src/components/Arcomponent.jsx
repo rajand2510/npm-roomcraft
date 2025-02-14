@@ -6,7 +6,8 @@ const Arcomponent = () => {
   const params = new URLSearchParams(location.search);
   const gltfPath = params.get('gltfPath') || './models/default.gltf';
 
-console.log(gltfPath);
+  console.log(gltfPath)
+
 
 
   console.log("gltfPath:", gltfPath); // Log the gltfPath for debugging

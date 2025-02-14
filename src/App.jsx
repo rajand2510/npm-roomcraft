@@ -1,9 +1,11 @@
 
 import './App.css'
 import { Routes, Route } from "react-router-dom";
-import Home from './pages/home';
-import Arcomponent from './Arcomponent';
+import Home from './pages/Home';
+
 import Dashboard from './pages/dashboard';
+import Arcomponent from './components/Arcomponent';
+
 function App() {
  
 
@@ -12,8 +14,8 @@ function App() {
 
      <Routes>
         <Route path="/" element={<Home />} />
-      <Route path="/xr" element={<Arcomponent/>} />
       <Route path="/dashboard" element={<Dashboard/>} />
+      <Route path="/xr" element={<Arcomponent/>} />
       </Routes>
       </>
   )

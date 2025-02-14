@@ -71,11 +71,11 @@ const Sidebar = ({ onSelect, activePage }) => {
       icon: <Settings className="w-5 h-5" />,
       submenu: [
         {
-          name: "3D-AR sm",
+          name: "3D-AR sm Card",
           onClick: () => onSelect("CustomizablePage"),
         },
         {
-          name: "Detailed Product Card",
+          name: "Product Info Card",
           onClick: () => onSelect("DetailedPage"),
         },
       ],

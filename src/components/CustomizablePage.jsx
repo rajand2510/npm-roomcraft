@@ -76,11 +76,14 @@ const handleCopy = () => {
       <div className="h-[80%] flex flex-row text-gray-900">
         {/* Left Side: Code Block */}
         <section id="installationguide" className="py-16 px-10 w-3/5">
-          <h2 className="text-4xl mb-8 font-semibold">🎮 Demo</h2>
+          <h2 className="text-4xl mb-8 font-semibold">📱 3D-AR sm</h2>
+          
           <p className="mt-4 text-gray-700 leading-relaxed">
-            Experience RoomCraft in action! Below are various use cases showcasing <br />
-            how you can integrate <strong>RoomCraft</strong> into your project and customize <br />
-            its behavior to enhance user interaction with 3D models and AR functionality.
+         
+            Experience RoomCraft&apos;s 3D and AR functionality in action! Below is an <br />
+            interactive product card showcasing how you can integrate RoomCraft&apos;s npm <br />
+            package into your project. Customize the card style and preview changes in
+  real time.
           </p>
 
           <div className=" p-6 flex items-center space-x-4">
