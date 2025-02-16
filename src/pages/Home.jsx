@@ -22,7 +22,7 @@ const Home = () => {
 
     </a>
 </div>
-          <div className='flex flex-col mt-18'>
+          <div className='flex flex-col mt-14'>
           
             <div className="text-center  px-4">
  
@@ -36,12 +36,12 @@ const Home = () => {
     Bring Your Products to Life in <br />
     <span className="bg-clip-text text-transparent bg-gradient-to-r from-gray-400 to-gray-600">3D & Augmented Reality</span>
 </h1>
-<p className="text-[15px] md:text-[15px] lg:text-[15px] text-gray-400 mb-8 max-h-16 overflow-hidden">
+<p className="text-[15px] md:text-[15px] lg:text-[15px] my-5 text-gray-400 mb-8 max-h-16 overflow-hidden">
     Seamlessly showcase products in 3D & AR with just a few lines of code.<br />
     Enhance your eCommerce experience with <span className="text-gray-200">RoomCraft</span>.
 </p>
 
-                <div className="flex justify-center space-x-4">
+                <div className="flex justify-center space-x-4 mt-10 mb-5">
                     <a href="/dashboard" className="bg-white text-black px-6 py-3 rounded-full shadow-md hover:bg-gray-200 transition">
                         Get Started  <FontAwesomeIcon icon={faArrowRightSolid} />
                     </a>

@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@tailwind utilities;
+
 @layer base {
   :root {
     --radius: 0.5rem

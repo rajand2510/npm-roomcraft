@@ -84,13 +84,16 @@ const Sidebar = ({ onSelect, activePage }) => {
       name: "Help",
       icon: <HelpCircle className="w-5 h-5" />,
       submenu: [
-       
+        {
+          name: "Contact Us",
+          onClick: () => onSelect("ContactPage"),
+        },
       ],
     },
   ];
 
   return (
-    <nav className="mt-[62px]  overscroll-none shadow-sm  w-80 min-h-screen  bg-white space-y-8">
+    <nav className="mt-[80px]  overscroll-none shadow-sm  w-80 min-h-screen  bg-white space-y-8">
       <div className="flex mt-5 flex-col h-full px-4 overflow-auto">
         <ul className="text-sm font-medium flex-1">
           {navigation.map((item, idx) => (

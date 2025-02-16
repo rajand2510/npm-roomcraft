@@ -6,6 +6,7 @@ import InstallationPage from "./InstallationPage";
 import DemoPage from "./DemoPage ";
 import CustomizablePage from "./CustomizablePage";
 import DetailedPage from "./DetailedPage";
+import ContactPage from "./ContactPage";
 
 
 // import DetailedPage from "../components/DetailedPage ";
@@ -28,6 +29,8 @@ const Dashboard = () => {
         return <CustomizablePage />;
       case "DetailedPage":
         return <DetailedPage />;
+        case "ContactPage":
+        return <ContactPage />;
       // Add more cases for additional pages
       default:
         return <HomePage />;

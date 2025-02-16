@@ -2,7 +2,9 @@
 export default {
     content: ["./index.html", "./src/**/*.{ts,tsx,js,jsx}"],
     theme: {
-      extend: {},
+      extend: { fontFamily: {
+        sans: ["Titillium Web", ], // Set as default
+      },},
     },
     plugins: [],
   };
