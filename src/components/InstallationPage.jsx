@@ -5,7 +5,7 @@ import { solarizedlight } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 
 export default function InstallationPage() {
-    const codeString = `npm install roomcraft-package`;
+    const codeString = `npm install room-craft`;
 
 
     return (
