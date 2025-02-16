@@ -95,64 +95,34 @@ export default function InstallationPage() {
             <section className="px-10 mb-8">
                 <h2 className="text-2xl mb-2 flex flex-row gap-2 font-semibold ">   <Route className="w-8 h-8 text-blue-500" />
                     <h1>Step 3: Routing Setup</h1></h2>
+             
                 <div className=" p-6 flex items-center space-x-4">
 
                     <div>
                         <p className="text-gray-600 ">
-                            1️⃣ Create the AR component (<strong>Arcomponent.js</strong>):
+                        Add routing in <strong>App.js</strong>:
                         </p>
                         <div className="mt-4">
                             <SyntaxHighlighter language="javascript" style={solarizedlight}>
-                                {`import { useLocation } from 'react-router-dom';
-import { XrHitModelContainer } from '3d-ar-product-card';
+                                {`
 
-const Arcomponent = () => {
-  const location = useLocation();
-  const params = new URLSearchParams(location.search);
-  const gltfPath = params.get('gltfPath') || './models/default.gltf';
+import { Routes, Route } from "react-router-dom";
+import { XrHitModelContainer } from 'room-craft';
 
-  console.log("gltfPath:", gltfPath); // Log for debugging
-
+function App() {
   return (
     <>
-      {gltfPath ? (
-        <XrHitModelContainer gltfPath={gltfPath} />
-      ) : (
-        <p>Error: No valid GLTF path provided.</p>
-      )}
-    </>
-  );
-};
-
-export default Arcomponent;`}
-                            </SyntaxHighlighter>
-
-                        </div>
-                    </div>
-
-                </div>
-                <div className=" p-6 flex items-center space-x-4">
-
-                    <div>
-                        <p className="text-gray-600 ">
-                            2️⃣ Add routing in <strong>App.js</strong>:
-                        </p>
-                        <div className="mt-4">
-                            <SyntaxHighlighter language="javascript" style={solarizedlight}>
-                                {`import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Arcomponent from "./components/Arcomponent";
-
-const App = () => {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/xr" element={<Arcomponent />} />
+     <Routes>
+        <Route path="/" element={<Home />} />
+      <Route path="/dashboard" element={<Dashboard/>} />
+      <Route path="/xr" element={<XrHitModelContainer/>} />
       </Routes>
-    </Router>
-  );
-};
+      </>
+  )
+}
 
-export default App;`}
+export default App
+`}
                             </SyntaxHighlighter>
 
                         </div>
