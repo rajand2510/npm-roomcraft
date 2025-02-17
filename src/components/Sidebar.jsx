@@ -93,7 +93,7 @@ const Sidebar = ({ onSelect, activePage }) => {
   ];
 
   return (
-    <nav className="mt-[80px]  overscroll-none shadow-sm  w-80 min-h-screen  bg-white space-y-8">
+    <nav className="mt-[64px]  overscroll-none shadow-sm  w-80 min-h-screen  bg-white space-y-8">
       <div className="flex mt-5 flex-col h-full px-4 overflow-auto">
         <ul className="text-sm font-medium flex-1">
           {navigation.map((item, idx) => (

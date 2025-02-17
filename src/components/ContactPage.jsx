@@ -31,7 +31,7 @@ const ContactPage = () => {
   return (
     <div className="h-[80%]">
 
-     <section id="installationguide" className="pt-16 pb-15 px-10 w-3/5">
+     <section id="installationguide" className="pt-16 pb-6 px-10 w-3/5">
           <h2 className="text-4xl  font-semibold">  📬 Contact Us</h2>
           
         </section>

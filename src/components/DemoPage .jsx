@@ -8,6 +8,28 @@ import { Arcard } from "room-craft";
 const DemoPage = () => {
     const [copySuccess, setCopySuccess] = useState(false);
   //const codeString = `npm install roomcraft-package`;
+  const propsTable = [
+    {
+      type: "detailed",
+      styles: ["minimal", "glassmorphism"],
+      props: ["gltfPath", "productName", "productPrice", "productDescription", "productRating", "cardColor", "textColor"],
+    },
+    {
+      type: "3d-ar",
+      styles: ["minimal", "glassmorphism"],
+      props: ["gltfPath", "productName", "productPrice", "cardColor", "textColor"],
+    },
+    {
+      type: "3d-only",
+      styles: ["minimal", "glassmorphism"],
+      props: ["gltfPath", "productName", "productPrice", "cardColor", "textColor"],
+    },
+    {
+      type: "custom-size",
+      styles: ["minimal", "glassmorphism"],
+      props: ["gltfPath", "customWidth","customHeight", "cardColor"],
+    },
+  ];
   const codeString = `import { Arcard } from "room-craft";
 
 <Arcard
@@ -89,29 +111,35 @@ const handleCopy = () => {
 
 
 
-
-      <div className="container mx-auto py-12">
-        <h3 className="text-3xl font-bold text-center mb-8">Featured Products</h3>
-
-        <Arcard
-          gltfPath="/models/chair_djdf.glb"
-          imageSrc="/image/17.png"
-          productName="md nskdnvkd"
-          productPrice='100'
-          productDescription="hi ruchit where are come to library we want job becase we are job less hi ruchit where are come to library we want job becase we are job less
-                hi ruchit where are come to library we want job becase we are job lesshi ruchit wher"
-          // Pass the details as an array
-          type="detailed" // AR and 3D card
-
-          cardColor="rgba(173,109,244,0.5)" // Optional: Set the card color
-          textColor="#ffffff" // Optional: Set text color
-          cardStyle="minimal"
-          productRating="4"
-
-        />
+      <div className="max-w-5xl mx-auto p-8 bg-white shadow-sm rounded-2xl ">
 
 
+        <table className="w-full border-collapse">
+          <thead className=" ">
+            <tr>
+              <th className="px-6 py-3 text-left text-lg font-semibold">Type</th>
+              <th className="px-6 py-3 text-left text-lg font-semibold">Available Styles</th>
+              <th className="px-6 py-3 text-left text-lg font-semibold">Included Props</th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-gray-200">
+            {propsTable.map((row, index) => (
+              <tr key={index} className="hover:bg-gray-100 transition-all">
+                <td className="px-6 py-4 text-gray-800 font-medium">{row.type}</td>
+                <td className="px-6 py-4 text-gray-600">{row.styles.join(", ")}</td>
+                <td className="px-6 py-4 text-gray-600">
+                  <ul className="  space-y-1">
+                    {row.props.map((prop, i) => (
+                      <li key={i} className="text-sm text-gray-700">{prop}</li>
+                    ))}
+                  </ul>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
+  
 
 
     </div>

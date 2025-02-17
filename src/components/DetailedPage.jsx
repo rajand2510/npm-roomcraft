@@ -8,16 +8,18 @@ import { Arcard } from "room-craft";
 const DetailedPage = () => {
     const [copySuccess, setCopySuccess] = useState(false);
   //const codeString = `npm install roomcraft-package`;
-  const codeString = `import { Arcard } from "room-craft";
-
-<Arcard
-  gltfPath="/models/tree_lamp.glb"
-  type="custom-size" // card features
-  cardColor="#ffffff" // Optional: Set the card color
-  cardStyle="minimal" // Optional: Card style 
-  customWidth="350px" // Minimum 250px suggested
-    customHeight="350px" // Minimum 250px suggested
-/>
+  const codeString = `<Arcard
+          gltfPath="/models/chair_djdf.glb"
+          productName="Elegant Wooden Chair"
+          productPrice='100'
+          productDescription="" 
+          // Pass the details as an array
+          type="detailed" // AR and 3D card
+          cardColor="#0ea493" // Optional: Set the card color
+          textColor="#a9fee5" // Optional: Set text color
+          cardStyle="minimal" //option :glassmorphism
+          productRating="4"
+        />
 `;
 const handleCopy = () => {
   navigator.clipboard.writeText(codeString)
@@ -31,17 +33,26 @@ const handleCopy = () => {
     <div className="">
       <div className="h-[80%] flex flex-row text-gray-900">
         {/* Left Side: Code Block */}
-        <section id="installationguide" className="py-16 px-10 w-3/5">
-          <h2 className="text-4xl mb-8 font-semibold">🎮 Demo</h2>
+        <section id="installationguide" className="pt-16 px-10 w-3/5">
+          <h2 className="text-4xl mb-8 font-semibold">🛍 Product Info Card</h2>
           <p className="mt-4 text-gray-700 leading-relaxed">
-            Experience RoomCraft in action! Below are various use cases showcasing <br />
-            how you can integrate <strong>RoomCraft</strong> into your project and customize <br />its behavior to enhance user interaction with 3D models and AR functionality.
+          Explore detailed product information with RoomCraft! Below are various use cases<br/> demonstrating 
+           how you can integrate RoomCraft into your project to display product<br/> details in an
+            interactive 3D and AR experience.
+
+
+
+
+
+
+
+
           </p>
           <div className=" p-6 flex items-center space-x-4">
 
             <div>
 
-              <div className="mt-4 relative">
+              <div className="mt-2 relative">
                 <SyntaxHighlighter language="jsx" style={solarizedlight}>
                   {codeString}
                 </SyntaxHighlighter>
@@ -65,46 +76,22 @@ const handleCopy = () => {
             </div>
           </div>
         </section>
-        <section className="px-10 mb-8 mt-28 py-16 w-2/5">
-          <Arcard
-            gltfPath="/models/chair_djdf.glb"
-
-            // productName="{product.name}"
-            // price='100'
-            // productDetails={[{
-            //   description: product.description,
-            //   image: product.image,
-            // }]} // Pass the details as an array
-            type="custom-size" // AR and 3D card
-            cardColor="#ffffff" // Optional: Set the card color
-            textColor="#ffffff" // Optional: Set text color
-            cardStyle="minimal"
-            customWidth="350px" // minimum 300 suggested
-            customHeight="350px" // minimum 300 suggested
-          />
-        </section>
-
+     
       </div>
 
 
-
-
-
       <div className="container mx-auto py-12">
-        <h3 className="text-3xl font-bold text-center mb-8">Featured Products</h3>
-
+      
         <Arcard
           gltfPath="/models/chair_djdf.glb"
-          imageSrc="/image/17.png"
-          productName="md nskdnvkd"
+          productName="Elegant Wooden Chair"
           productPrice='100'
-          productDescription="hi ruchit where are come to library we want job becase we are job less hi ruchit where are come to library we want job becase we are job less
-                hi ruchit where are come to library we want job becase we are job lesshi ruchit wher"
+          productDescription="A beautifully crafted wooden chair, designed for both style and comfort. Made from high-quality, durable wood, this chair features a smooth polished finish that highlights the natural grain patterns and elegance to any space."
           // Pass the details as an array
           type="detailed" // AR and 3D card
 
-          cardColor="rgba(173,109,244,0.5)" // Optional: Set the card color
-          textColor="#ffffff" // Optional: Set text color
+          cardColor="#0ea493" // Optional: Set the card color
+          textColor="#a9fee5" // Optional: Set text color
           cardStyle="minimal"
           productRating="4"
 
