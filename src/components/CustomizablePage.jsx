@@ -127,7 +127,7 @@ const handleCopy = () => {
           {cardtype == "3d-ar" && (
              <section className="  mb-8 mt-55 w-2/5">
           <Arcard
-            gltfPath="/models/chair_djdf.glb"
+            gltfPath="/models/indoor_plant/scene.gltf"
             productName={productName}
             type="3d-ar"
             cardColor={cardColor}
