@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from "react";
-import {  faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faNpm } from '@fortawesome/free-brands-svg-icons';
+
 import { faBolt, faArrowRight as faArrowRightSolid } from '@fortawesome/free-solid-svg-icons';
 import { Arcard } from "room-craft"; // Assuming this is the AR product card package
 import { Clipboard, ClipboardCheck } from "lucide-react";
@@ -17,8 +18,8 @@ const Home = () => {
         <div className="bg-gradient-to-r from-black via-gray-900 to-black text-white min-h-screen flex  items-start justify-center"> {/* Change items-center to items-start */}
             {/* <Navbar  /> */}
                       <div className="flex  absolute  w-full mr-10 mt-4 justify-end space-x-4 mb-4">
-    <a href="#" className="text-white">
-    <FontAwesomeIcon className="text-2xl" icon={faGithub} />
+    <a href="https://www.npmjs.com/package/room-craft" className="text-white">
+    <FontAwesomeIcon className="text-2xl" icon={faNpm} />
 
     </a>
 </div>
