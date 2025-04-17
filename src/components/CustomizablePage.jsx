@@ -159,7 +159,7 @@ const handleCopy = () => {
 
 
    </div>
-   <div className="p-4  shadow-sm rounded-xl z-10 absolute bg-white flex flex-wrap items-center gap-2 w-auto ml-9">
+   <div className="p-4 -mt-10 shadow-sm rounded-xl z-10 absolute bg-white flex flex-wrap items-center gap-2 w-auto ml-9">
 
 
      {/* Type Dropdown */}
