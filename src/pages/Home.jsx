@@ -64,7 +64,7 @@ const Home = () => {
     //   description: product.description,
     //   image: product.image,
     // }]} // Pass the details as an array
-    type="custom-size" // AR and 3D card
+    type="3d-ar" // AR and 3D card
     cardColor="#ffffff" // Optional: Set the card color
     textColor="#ffffff" // Optional: Set text color
     cardStyle="minimal"
@@ -80,7 +80,7 @@ const Home = () => {
     //   description: product.description,
     //   image: product.image,
     // }]} // Pass the details as an array
-    type="custom-size" // AR and 3D card
+    type="3d-ar" // AR and 3D card
     cardColor="#ffffff" // Optional: Set the card color
     textColor="#ffffff" // Optional: Set text color
     cardStyle="minimal"
@@ -96,7 +96,7 @@ const Home = () => {
     //   description: product.description,
     //   image: product.image,
     // }]} // Pass the details as an array
-    type="custom-size" // AR and 3D card
+    type="3d-ar" // AR and 3D card
     cardColor="#ffffff" // Optional: Set the card color
     textColor="#ffffff" // Optional: Set text color
     cardStyle="minimal"
@@ -106,6 +106,7 @@ const Home = () => {
 </div>
 
               </div>
+              
         </div>
     );
 };
